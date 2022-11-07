@@ -32,9 +32,11 @@
 	
 	<h:form>
 		<label>Pays : </label><h:inputText value="#{pays}"></h:inputText><br></br>
-		<input type="submit" value="Envoyer"></input><br></br>
+		<h:commandButton action="response" value="Submit" ></h:commandButton><br></br>
 	</h:form>
 	<br></br>
-	<label>Pays choisi : </label><h:outputText value="#{pays}"></h:outputText>
+	<!--  <label>Pays choisi : </label><h:outputText value="#{pays}"></h:outputText> -->
 </div>
 </body>
+
+</html>
