@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+<title>Coupe du monde</title>
+<style>
+	body{
+		background-color:silver;
+	}
+	div{
+		padding-left : 30%;
+		padding-right : 30%;	
+	}
+
+</style>
+</head>
+
+<body>
+	<div>
+	<h1>Coupe du monde 2022</h1>
+	<h3>Qui gagnera la Coupe du Monde au Qatar selon vous ?</h3>
+	<ul>
+		<li>Europe : France, Espagne, Pays-Bas</li>
+		<li>Amérique : Canada, Brésil, Argentine</li>
+		<li>Afrique : Sénégal, Maroc, Tunisie</li>
+		<li>Asie : Japon, Qatar, Iran</li>
+	</ul>
+	<p>Choisissez <strong>un pays</strong> parmi la liste ci-dessus (ils ne sont pas tous là)</p>
+	
+	<h:form>
+		<label>Pays : </label><h:inputText value="#{pays}"></h:inputText><br></br>
+		<input type="submit" value="Envoyer"></input><br></br>
+	</h:form>
+	<br></br>
+	<label>Pays choisi : </label><h:outputText value="#{pays}"></h:outputText>
+</div>
+</body>
